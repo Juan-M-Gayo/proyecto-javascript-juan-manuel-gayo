@@ -1,0 +1,83 @@
+[
+    
+    {
+        "id": "bcc-1",
+        "image":"image/photos/products/autos-32/clasicos/christianLedesma-tc-n1-2008.png",
+        "detail": "clasico",
+        "pilot": "Christian<br>Ledesma",
+        "info": "Chevrolet (1:32) - 2008",
+        "price": 1850,
+        "amount":12
+    },
+
+    {
+        "id": "bcc-2",
+        "image":"image/photos/products/autos-32/clasicos/emilioSatriano-chevrolet-tc-n4-1990.png",
+        "detail": "clasico",
+        "pilot": "Emiliano<br>Satriano",
+        "info": "Chevrolet (1:32) - 1990",
+        "price": 1850,
+        "amount":12
+    },
+
+    {
+        "id": "bcc-3",
+        "image":"image/photos/products/autos-32/clasicos/guillermoOrtelli-ford-tc-1996.png",
+        "detail": "clasico",
+        "pilot": "Guillermo<br>Orteli",
+        "info": "Ford (1:32) - 1996",
+        "price": 1850,
+        "amount":12
+    },
+
+    {
+        "id": "bcc-4",
+        "image":"image/photos/products/autos-32/clasicos/juanMariaTraverso-tc2000-renaultFuego-1989.png",
+        "detail": "clasico",
+        "pilot": "Juan Maria<br>Traverso",
+        "info": "Renault (1:32) - 1989",
+        "price": 1850,
+        "amount":12
+    },
+
+    {
+        "id": "bcc-5",
+        "image":"image/photos/products/autos-32/clasicos/marcosDiPalma-tc-n5-2002.png",
+        "detail": "clasico",
+        "pilot": "Marcos<br>Di Palma",
+        "info": "Chevrolet (1:32) - 2002",
+        "price": 1850,
+        "amount":12
+    },
+
+    {
+        "id": "bcc-6",
+        "image":"image/photos/products/autos-32/clasicos/omarGuriMartinez-ford-tc-n1-2016.png",
+        "detail": "clasico",
+        "pilot": "Omar 'Guri'<br>Martinez",
+        "info": "Ford (1:32) - 2016",
+        "price": 1850,
+        "amount":12
+    },
+
+    {
+        "id": "bcc-7",
+        "image":"image/photos/products/autos-32/clasicos/robertoMouras-chevrolet-tc-n11-1987.png",
+        "detail": "clasico",
+        "pilot": "Roberto<br>Mouras",
+        "info": "Chevrolet (1:32) - 1987",
+        "price": 1850,
+        "amount":12
+    },
+
+    {
+        "id": "bcc-8",
+        "image":"image/photos/products/autos-32/clasicos/vicenteTanoPernia-ford-tc-n9-1997.png",
+        "detail": "clasico",
+        "pilot": "Vicente 'Tano'<br>Pernia",
+        "info": "Ford (1:32) - 1997",
+        "price": 1850,
+        "amount":12
+    }
+
+]

@@ -1,0 +1,97 @@
+// MIXINS
+
+@mixin card-container {
+    position: relative;
+    display: block; 
+    margin-top: 1.5rem;
+    height: 20rem;
+    width: 14rem;
+    object-fit: cover; 
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 1.25rem;
+    backdrop-filter: blur(0.25rem) saturate(180%);
+    box-shadow: 0 0.35rem 0.65rem rgba(0,0,0,0.2);
+}
+
+@mixin card-image-container {
+    position: absolute;
+    top: -3.15rem;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 10rem;
+    width: 12rem;
+    background: $colorWhite;
+    border-radius: 1.25rem;
+    box-shadow: 0 0.35rem 0.65rem rgba(0,0,0,0.2);
+}
+
+@mixin card-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@mixin card-detail {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 6rem;
+    left: 78%;
+    transform: translateX(-78%);
+    height: 1.8rem;
+    width: 3.4rem;
+    color: $colorWhite;
+    background: $colorBlack;
+    border-radius: 1.25rem;
+    box-shadow: 0 0.35rem 0.65rem rgba(0,0,0,0.2);
+}
+
+@mixin card-content {
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+}
+
+@mixin card-info {
+    padding: 1rem;
+    width: 100%;
+}
+
+@mixin card-pilot {
+    font-size: 1.3rem;
+    text-shadow: -0.06rem 0 0.06rem rgba(255, 255, 255, 0.3), 0 0.06rem 0.06rem rgba(255, 255, 255, 0.3), 0.06rem 0 0.06rem rgba(255, 255, 255, 0.3), 0 -0.06rem 0.06rem rgba(255, 255, 255, 0.3);
+}
+
+@mixin card-category {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-shadow: -0.06rem 0 0.06rem rgba(255, 255, 255, 0.3), 0 0.06rem 0.06rem rgba(255, 255, 255, 0.3), 0.06rem 0 0.06rem rgba(255, 255, 255, 0.3), 0 -0.06rem 0.06rem rgba(255, 255, 255, 0.3);
+}
+
+@mixin card-price {
+    margin: 1rem;
+    justify-content: center;
+    font-size: 1.6rem;
+    text-shadow: -0.06rem 0 0.06rem rgba(255, 255, 255, 0.3), 0 0.06rem 0.06rem rgba(255, 255, 255, 0.3), 0.06rem 0 0.06rem rgba(255, 255, 255, 0.3), 0 -0.06rem 0.06rem rgba(255, 255, 255, 0.3);
+}
+
+@mixin card-button-add {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    width: 8rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    color: $colorWhite;
+    background: $colorSecondary;
+    border: none;
+    border-radius: 1.5rem;
+    outline: none;
+    box-shadow: 0 0.35rem 0.65rem rgba(0, 0, 0, 0.2);
+    transform: rotateX(0deg) scale(1);
+    transition: all 0.1s linear;
+    cursor: pointer;
+}

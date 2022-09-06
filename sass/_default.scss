@@ -1,0 +1,31 @@
+/* DEFAULT */
+
+html {
+    height: -webkit-fill-available;
+    width: 100%;
+    overflow: hidden;
+    body {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        height: -webkit-fill-available;
+        width: 100%;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        color: $colorBlack;
+        position: fixed;
+        overflow-y: overlay;
+        ul {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+        }      
+        img {
+            height: auto;
+        }
+        div.disclaimer {
+            display: none;
+        }
+    }
+}

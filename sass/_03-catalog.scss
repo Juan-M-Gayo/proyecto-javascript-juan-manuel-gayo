@@ -1,0 +1,140 @@
+/* CATALOG */
+@import "catalog-mixins";
+
+// => Products carousel
+.swiper {
+    height: 100%;
+    width: 100%;
+    .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        padding: 0 1rem;
+        height: 28.5rem;
+        width: 18rem;
+        font-size: 1.12rem;
+        text-align: center;
+        background-size: cover;
+        background-position: center;
+        // filter: grayscale(1); 
+        transform: scale(0.9); 
+        @media screen and (min-width: 1023px) {
+            height: 27rem;
+        }
+        // => Product card
+        .product-container {
+            @include card-container;
+            // => Product content
+            .product-content {
+                @include card-content;
+                // => Product info
+                .product-info {
+                    @include card-info;
+                    // => Product image
+                    .product-image-container {
+                        @include card-image-container;
+                        .product-image {
+                            @include card-image;
+                            padding: 0.4rem;
+                        }
+                    }
+                    // => Bc detail
+                    .bc-detail, .bc-detail-classics {
+                        @include card-detail;
+                        .bc-detail-text, .bc-detail-classics-text {
+                            font-size: 0.75rem;
+                        }
+                    }
+                    .bc-detail-classics {
+                        width: 4.4rem;
+                        background: $colorMain;
+                    }
+                    // => Helmet detail
+                    .helmet-detail {
+                        @include card-detail;
+                        width: 6rem;
+                        background: $colorMain;
+                        .helmet-detail-text {
+                            font-size: 0.75rem;
+                        }
+                    }
+                    // => Sc detail
+                    .sc-detail {
+                        @include card-detail;
+                        width: 6rem;
+                        background: $colorMain;
+                        .sc-detail-text {
+                            font-size: 0.75rem;
+                        }
+                    }
+                    // => Product pilot
+                    .product-pilot {
+                        @include card-pilot;
+                    }
+                    // => Product category
+                    .product-category {
+                        @include card-category;
+                    }
+                    // => Product price
+                    .product-price{
+                        @include card-price;
+                    }
+                    .product-amount {
+                        display: none;
+                    }
+                    .product-id {
+                        display: none;
+                    }
+                    // => Add button
+                    .add-button {
+                        @include card-button-add;
+                    }
+                    .add-button:hover {
+                        background: $colorMain;
+                        transition-duration: 0.3s;
+                    }
+                    .add-button:active {
+                        font-size: 0.8rem;
+                        background: #0179fd;
+                        box-shadow: 0 0.47rem 0.65rem rgba(0, 0, 0, 0.2);
+                        transform: rotateX(15deg) scale(0.9);
+                    }
+                    .add-button::after {
+                        content: "+1";
+                        display: flex;
+                        position: absolute;
+                        align-items: center;
+                        justify-content: center;
+                        top: 0.3rem;
+                        right: 9rem;
+                        height: 1.5rem;
+                        width: 1.5rem;
+                        font-size: 0.6rem;
+                        background: $colorBagItem;
+                        border-radius: 1.5rem;
+                        opacity: 0;
+                        transition: all 1.5s;
+                    }
+                    .add-button:active::after {
+                        position: absolute;
+                        top: 0.3rem;
+                        right: 7rem;
+                        border-radius: 1.5rem;
+                        opacity: 1;
+                        transition: 0s;
+                    }
+                    .add-button:disabled,
+                    .add-button:disabled::after {
+                        content: "sin stock";
+                        background-color: transparent;
+                        cursor: default;
+                    }
+                }
+            }
+        }
+    }
+    .swiper-slide-active {
+        // filter: grayscale(0);
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,59 @@
+/* TOAST */
+
+.toastify {
+    display: flex;
+    position: fixed;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+    min-width: 250px;
+    font-size: 0.9rem;
+    text-align: center;
+    color: $colorWhite;
+    background: linear-gradient(135deg, $colorMain, $colorSecondary);
+    border-radius: 1.6rem;
+    box-shadow: 0 0.35rem 0.65rem rgba(0,0,0,0.2);
+    cursor: default;
+    @media screen and (min-width: 361px) {
+        right: 2.2rem;
+        min-width: 300px;
+        font-size: 1rem;
+    }
+    @media screen and (min-width: 424px) {
+        right: 3.75rem;
+    }
+}
+
+/* SWEET */
+
+.swal2-popup {
+    font-size: 0.8rem;
+    border-radius: 1.6rem;
+    .swal2-styled {
+        border-radius: 1.6rem;
+        box-shadow: 0 0.35rem 0.65rem rgba(0, 0, 0, 0.2);
+        transform: rotateX(0deg) scale(1);
+        transition: all 0.1s linear;
+    }
+    .swal2-styled:active {
+        font-size: 0.8rem;
+        box-shadow: 0 0.47rem 0.65rem rgba(0, 0, 0, 0.2);
+        transform: rotateX(15deg) scale(0.9);
+    }
+    .swal2-styled:focus {
+        box-shadow: none;
+    }
+    .swal2-icon.swal2-warning {
+        color: $colorSecondary;
+        border-color: $colorSecondary;
+    }
+    .swal2-icon.swal2-info {
+        color: $colorSecondary;
+        border-color: $colorSecondary;
+    }
+    .swal2-icon.swal2-question {
+        color: #a2a2a2;
+        border-color: #a2a2a2;
+    }
+}

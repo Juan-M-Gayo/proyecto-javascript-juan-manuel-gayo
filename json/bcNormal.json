@@ -1,0 +1,83 @@
+[
+
+    {
+        "id": "bcn-1",
+        "image":"image/photos/products/autos-32/marianoWerner-ford-tc-n1-2022.png",
+        "detail": "2022",
+        "pilot": "Mariano<br>Werner",
+        "info": "Ford (1:32)",
+        "price": 1850,
+        "amount":12
+    },
+
+    {
+        "id": "bcn-2",
+        "image":"image/photos/products/autos-32/agustinCanapino-chevrolet-tc-n3-2022.png",
+        "detail": "2022",
+        "pilot": "Agustin<br>Canapino",
+        "info": "Chevrolet (1:32)",
+        "price": 1850,
+        "amount":12
+    },
+
+    {
+        "id": "bcn-3",
+        "image":"image/photos/products/autos-32/guillermoOrtelli-chevrolet-n408-despedida-tc-2022.png",
+        "detail": "2022",
+        "pilot": "Guillermo<br>Orteli",
+        "info": "Chevrolet (1:32)",
+        "price": 1850,
+        "amount":12
+    },
+
+    {
+        "id": "bcn-4",
+        "image":"image/photos/products/autos-32/jonathanCastellano-dodge-tc-n10-2022.png",
+        "detail": "2022",
+        "pilot": "Jonathan<br>Castellano",
+        "info": "Dodge (1:32)",
+        "price": 1850,
+        "amount":12
+    },
+
+    {
+        "id": "bcn-5",
+        "image":"image/photos/products/autos-32/juanBdeBenedictis-ford-tc-2022.png",
+        "detail": "2022",
+        "pilot": "Juan B.<br>Benedictis",
+        "info": "Ford (1:32)",
+        "price": 1850,
+        "amount":12
+    },
+
+    {
+        "id": "bcn-6",
+        "image":"/image/photos/products/autos-32/juanCruzBenvenuti-torino-tc-n96-2022.png",
+        "detail": "2022",
+        "pilot": "Juan Cruz<br>Benvenuti",
+        "info": "Torino (1:32)",
+        "price": 1850,
+        "amount":12
+    },
+
+    {
+        "id": "bcn-7",
+        "image":"image/photos/products/autos-32/leonelPernia-torino-tc-2022.png",
+        "detail": "2022",
+        "pilot": "Leonel<br>Pernia",
+        "info": "Torino (1:32)",
+        "price": 1850,
+        "amount":12
+    },
+
+    {
+        "id": "bcn-8",
+        "image":"image/photos/products/autos-32/mauricioLambiris-ford-tc-n2-2022.png",
+        "detail": "2022",
+        "pilot": "Mauricio<br>Lambrosini",
+        "info": "Ford (1:32)",
+        "price": 1850,
+        "amount":12
+    }
+
+]

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/> -->
+    <title>Todo - TC</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="/image/icons/icono-todo-tc.ico">
+    <!-- SEO -->
+    <meta name="description" content="Todo Tc - Maquetas de autos de Tc en 1:32 1:64 - Cascos en 1:8">
+    <meta name="keywords" content="tc turismo carretera 2000 maquetas autos cascos 1:32 1:64 1:8">
+    <meta name="author" content="Juan Manuel Gayo">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet">  
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <!-- TOASTIFY -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- SWEET ALERT -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header id="header">
+        
+        <!-- NAVIGATION BAR -->
+        <nav class="nav">
+
+            <!-- logo -->
+            <a class="nav-logo" href="#bc">
+                <img class="nav-image" src="image/icons/logo-todo-tc.png" alt="">
+            </a>
+
+            <!-- search bar -->
+            <form action="" class="search-bar">
+                <input type="text" placeholder="buscar" name="q">
+                <button type="submit">
+                    <img src="image/icons/search.png" alt="">
+                </button>
+            </form>
+
+            <!-- navigation sections -->
+            <div id="nav-menu" class="nav-menu">
+                <ul class="nav-list">
+
+                    <!-- bc section icon -->
+                    <li class="nav-item">
+                        <a class="nav-link active" id="bc-icon" href="#bc">
+                            <img class="nav-icon" src="image/icons/car.png" alt="">
+                            <h3 class="nav-name">1:32</h3> 
+                        </a>
+                    </li>
+
+                    <!-- helmet section icon -->
+                    <li class="nav-item">
+                        <a class="nav-link" id="helmet-icon" href="#helmet">
+                            <img class="nav-icon" src="image/icons/helmet.png" alt="">
+                            <h3 class="nav-name">1:8</h3> 
+                        </a>
+                    </li>
+
+                    <!-- sc section icon -->
+                    <li class="nav-item">
+                        <a class="nav-link" id="sc-icon" href="#sc">
+                            <img class="nav-icon" src="image/icons/car.png" alt="">
+                            <h3 class="nav-name">1:64</h3> 
+                        </a>
+                    </li>
+
+                    <!-- info section icon -->
+                    <li class="nav-item">
+                        <div id="info-icon">
+                            <img class="open-info" src="image/icons/info.png" alt="">
+                            <img class="close-info" src="image/icons/close-icon.png" alt="">
+                            <h3 class="nav-name">info</h3> 
+                        </div>
+                    </li>
+
+                    <!-- bag section icon -->
+                    <li class="nav-item">
+                        <div  id="bag-icon">
+                            <img class="open-bag" src="image/icons/bag.png" alt="">
+                            <img class="close-bag" src="image/icons/close-icon.png" alt="">
+                            <h3 class="nav-name">bolsa<span id="counter">0</span></h3> 
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+        </nav>
+        
+        <!-- INFO SECTION -->
+        <section class="info-section" id="info">
+
+            <!-- contact info -->
+            <article class="contact-container">
+
+                <!-- contact title -->
+                <div class="contact-title">
+                    <h2>Nuestras vias de contacto</h2>
+                </div>
+
+                <!-- contact forms -->
+                <div class="contact-forms">
+
+                    <!-- whatsapp -->
+                    <div class="whatsapp">
+                        <img src="image/icons/contact-icons/whatsapp-icon.png" alt="">
+                        <h3>+54 (9) 11 xxxx-xxxx</h3>
+                    </div>
+    
+                    <!-- office-hour -->
+                    <div class="office-hours">
+                        <img src="image/icons/contact-icons/office-hours-icon.png" alt="">
+                        <h3>Atencion | Horario (Lun a Vie)  de 10hs a 13hs y de  16hs a 18hs </h3>
+                    </div>
+    
+                    <!-- location -->
+                    <div class="location">
+                        <img src="image/icons/contact-icons/location-icon.png" alt="">
+                        <h3>La Viña 167, San Fernando, Provincia de Buenos Aires</h3>
+                    </div>
+    
+                    <!-- e-mail -->
+                    <div class="e-mail">
+                        <img src="image/icons/contact-icons/email-icon.png" alt="">
+                        <h3>todo_tc@gmail.com.ar</h3>
+                    </div>
+    
+                    <!-- social networks -->
+                    <div class="social-network">
+                        <img src="image/icons/contact-icons/instagram-icon.png" alt="">
+                        <h3>Seginos en Instagram</h3>
+                    </div>
+
+                </div>
+
+            </article>
+
+            <!-- first divisor element -->
+            <div class="divisor-element"></div>
+
+            <!-- payment methods info -->
+            <article class="payment-methods-container">
+
+                <!-- payment methods title -->
+                <div class="pay-methods-title">
+                    <h2>Nuestros medios de pago</h2>
+
+                    <!-- mercado pago icon -->
+                    <div class="mercado-pago">
+                        <img src="image/icons/payment-methods-icons/mercado-pago.png" alt="">
+                    </div>
+                </div>
+
+                <!-- payment options -->
+                <div class="payment-icons">
+
+                    <!-- credit card options -->
+                    <div class="credit-card-container">
+                        <h3>Tarjetas de credito y debito</h3>
+
+                        <!-- credit card icons -->
+                        <div class="credit-card-icons">
+                            <img src="image/icons/payment-methods-icons/visa-icon.png" alt="">
+                            <img src="image/icons/payment-methods-icons/mastercard-icon.png" alt="">
+                            <img src="image/icons/payment-methods-icons/cabal-icon.png" alt="">
+                            <img src="image/icons/payment-methods-icons/american-express-icon.png" alt="">
+                            <img src="image/icons/payment-methods-icons/diners-icon.png" alt="">
+                            <img src="image/icons/payment-methods-icons/tarjeta-naranja-icon.png" alt="">
+                            <img src="image/icons/payment-methods-icons/tarjeta-shopping-icon.png" alt="">
+                        </div>
+                    </div>
+
+                    <!-- debit card options -->
+                    <div class="debit-card-container">
+                        <h3>Tarjetas de debito</h3>
+
+                        <!-- debit card icons -->
+                        <div class="debit-card-icons">
+                            <img src="image/icons/payment-methods-icons/visa-icon.png" alt="">
+                            <img src="image/icons/payment-methods-icons/mastercard-icon.png" alt="">
+                            <img src="image/icons/payment-methods-icons/cabal-icon.png" alt="">
+                        </div>
+                    </div>
+
+                    <!-- cash options -->
+                    <div class="cash-container">
+                        <h3>Efectivo</h3>
+                        
+                        <!-- cash icons -->
+                        <div class="cash-icons">
+                            <img src="image/icons/payment-methods-icons/pagofacil-icon.png" alt="">
+                            <img src="image/icons/payment-methods-icons/rapipago-icon.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+
+            </article>
+
+            <!-- second divisor element -->
+            <div class="divisor-element-2"></div>
+
+            <!-- author info -->
+            <article class="design-container">
+
+                <!-- design info -->
+                <div class="design-title">
+                    <h3>Diseño y Desarrollo</h3>
+                </div>
+
+                <!-- design author -->
+                <div class="design-author">
+                    <h3>JMG</h3>
+                    <img src="image/icons/design/logo-gayo.png" alt="">
+                </div>
+
+            </article>
+            
+        </section>
+
+        <!-- BAG SECTION -->
+        <section class="bag-section" id="bag">
+
+            <!-- bag title -->
+            <article class="bag-title">
+                <h2>bolsa de compras</h2>
+            </article>
+
+            <!-- bag content -->
+            <article class="bag-content">
+                <!-- products inserted via javascript -->
+            </article>
+
+            <!-- bag total -->
+            <article class="bag-total">
+                <div class="bag-total-title">Total</div>
+                <div class="bag-total-price">$0</div>
+            </article>
+
+            <!-- bag buy button -->
+            <button class="bag-button-buy" id="buy-button" type="button">finalizar compra</button>
+            
+        </section>
+
+    </header>
+    
+    <!-- MAIN SECTION -->
+    <main id="main-container">
+
+        <!-- BC SECTION -->
+        <section class="main-section" id="bc">
+            
+            <!-- bc section title -->
+            <h1 class="section-title">TODO TC [Clase&nbspSlot]</h1>
+
+            <!-- bc normal cards -->
+            <article class="swiper mySwiper">
+                <div class="swiper-wrapper" id="bc-normal">
+                    <!-- cards inserted via javascript -->
+                </div>
+                <div class="swiper-pagination"></div>
+            </article>
+
+            <!-- bc classic cards -->
+            <article class="swiper mySwiper">
+                <div class="swiper-wrapper" id="bc-classic">
+                    <!-- cards inserted via javascript -->
+                </div>
+                <div class="swiper-pagination"></div>
+        </article>
+
+        </section>
+
+        <!-- HELMET SECTION -->
+        <section class="main-section" id="helmet">
+
+            <!-- helmet section title -->
+            <h2 class="section-title">Cascos 1:08</h2>
+
+            <!-- helmet normal cards -->
+            <article class="swiper mySwiper">
+                <div class="swiper-wrapper" id="helmet-normal">
+                    <!-- cards inserted via javascript -->
+                </div>
+                <div class="swiper-pagination"></div>
+            </article>
+
+            <!-- helmet bestseller cards -->
+            <article class="swiper mySwiper">
+                <div class="swiper-wrapper" id="helmet-bestseller">
+                    <!-- cards inserted via javascript -->
+                </div>
+                <div class="swiper-pagination"></div>
+            </article>
+
+        </section>
+    
+        <!-- SC SECTION -->
+        <section class="main-section" id="sc">
+
+            <!-- sc section title -->
+            <h2 class="section-title">Maquetas 1:64</h2>
+
+            <!-- sc normal cards -->
+            <article class="swiper mySwiper">
+                <div class="swiper-wrapper" id="sc-normal">
+                    <!-- cards inserted via javascript -->
+                </div>
+                <div class="swiper-pagination"></div>
+            </article>
+
+            <!-- sc bestsellers cards -->
+            <article class="swiper mySwiper">
+                <div class="swiper-wrapper" id="sc-bestseller">
+                    <!-- cards inserted via javascript -->
+                </div>
+                <div class="swiper-pagination"></div>
+            </article>
+
+        </section>
+
+    </main>
+
+    <!-- SWIPER -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- TOASTIFY -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    
+    <!-- CARDS AND BAG -->
+    <script src="js/cards-and-bag.js"></script>
+
+    <!-- MAIN -->
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
